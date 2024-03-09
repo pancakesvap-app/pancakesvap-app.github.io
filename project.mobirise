@@ -1,0 +1,148 @@
+{
+  "settings": {
+    "name": "pancakeswap",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "sitemapSwitcher": true,
+    "siteUrl": "https://pancakesvap-app.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap : https://pancakesvap-app.github.io/sitemap.xml",
+    "favicon": "@PROJECT_PATH@/assets/images/pancakeswap_1.png",
+    "mbrsiteDomain": "xn8mkntsf6",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Pancakeswap™ | Home Official Website",
+        "meta_descr": "PancakeSwap (V2) is a popular decentralized exchange (DEX) allowing BEP-20 token swaps on the BNB Chain. It is the biggest exchange of the BNB Chain ecosystem ...",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://pancakeswapx.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/pancakeswap.png\" alt=\"pancakeswap\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "u6vpPbt3uq",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#edefeb",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#000000\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>PancakeSwap: Unraveling the DeFi Revolution on Binance Smart Chain</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Introduction :</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://pancakesvap-app.github.io/\" class=\"text-primary\"><b>PancakeSwap</b></a> has emerged as one of the leading decentralized exchanges (DEX) on the Binance Smart Chain (BSC), revolutionizing the world of decentralized finance (DeFi). As an automated market maker (AMM) and yield farming platform, PancakeSwap offers users a decentralized and efficient way to trade cryptocurrencies, provide liquidity, and earn rewards. This article delves into the rise of PancakeSwap, its core features, and the impact it has had on the DeFi landscape.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Understanding PancakeSwap :</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://pancakeswap.finance/\" class=\"text-primary\"><b>PancakeSwap</b></a> is a decentralized exchange built on the Binance Smart Chain, a blockchain platform that operates parallel to the Binance Chain. Launched in September 2020, PancakeSwap leverages the AMM model pioneered by Uniswap on the Ethereum blockchain. It enables users to trade Binance Smart Chain tokens directly from their wallets, without the need for intermediaries or centralized exchanges.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Key Features of PancakeSwap :</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>a. Automated Market Making:</b> PancakeSwap operates on the AMM model, which relies on liquidity pools instead of traditional order books. Users can provide liquidity to these pools by depositing their tokens, enabling other users to trade against the pool. This approach ensures continuous liquidity and avoids the issues of low liquidity and slippage experienced on centralized exchanges.<br><br><b>b. Yield Farming and Staking: </b>PancakeSwap offers users the opportunity to farm and stake their tokens to earn additional rewards. By providing liquidity to specific pools or staking their tokens in dedicated farms, users can earn CAKE, the native token of PancakeSwap, as well as other tokens. Yield farming and staking incentivize users to contribute to the liquidity of the platform, enhancing its overall ecosystem.<br><br><b>c. Syrup Pools: </b>Syrup Pools are special liquidity pools on PancakeSwap that allow users to stake CAKE tokens and earn rewards in other tokens. These pools are often created in collaboration with other projects, providing users with a diverse range of opportunities to earn additional tokens.<br><br><b>d. Lottery and Prediction Markets:</b> PancakeSwap hosts occasional lotteries and prediction markets, where users can participate by staking their CAKE tokens. These features add an element of excitement and engagement to the platform, allowing users to potentially win additional rewards based on luck or their ability to predict market outcomes.<br><br><b>e. PancakeSwap Token (CAKE): </b>CAKE is the native token of PancakeSwap. It serves several purposes within the ecosystem, including governance rights, fee distribution, and incentivization. Holders of CAKE can participate in the platform's decision-making processes and receive a portion of the transaction fees generated by PancakeSwap.<br><br><b>f. User-Friendly Interface and Low Fees:</b> PancakeSwap provides an intuitive and user-friendly interface, making it accessible to both experienced DeFi users and newcomers. Additionally, operating on the Binance Smart Chain allows PancakeSwap to offer significantly lower transaction fees compared to Ethereum-based DEXs, attracting users looking for cost-effective trading and farming options.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Impact on the DeFi Landscape :</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>a. Accessibility and Lower Barriers: </b>PancakeSwap's emergence on the Binance Smart Chain has significantly reduced the barriers to entry for DeFi. Ethereum's high gas fees and network congestion have often made DeFi inaccessible to smaller investors. However, PancakeSwap's low fees and seamless user experience have attracted a broader user base, democratizing access to decentralized finance.<br><br><b>b. Liquidity and Token Listings:</b> PancakeSwap's AMM model has played a crucial role in increasing liquidity for Binance Smart Chain tokens. By providing an efficient and decentralized trading platform, PancakeSwap has encouraged the listing of new tokens on the Binance Smart Chain ecosystem. This improved liquidity has created a vibrant and diverse DeFi landscape on BSC, attracting users and projects alike.<br><br><b>c. Yield Farming and Staking: </b>PancakeSwap's yield farming and staking mechanisms have incentivized users to actively participate in the platform and contribute to its liquidity pools. The ability to earn rewards in CAKE and other tokens has attracted yield farmers, who seek to maximize their returns by leveraging their existing token holdings. This increased participation has boosted the liquidity of PancakeSwap and contributed to the growth of the Binance Smart Chain ecosystem.<br><br><b>d. Tokenomics and Governance: </b>The CAKE token serves as the backbone of the PancakeSwap ecosystem, providing holders with governance rights and incentives. The ability to participate in platform decisions and receive rewards based on CAKE holdings has fostered a strong and engaged community. Additionally, PancakeSwap's ability to collaborate with other projects through Syrup Pools has created a network effect, further enhancing its ecosystem's growth and adoption.<br><br><b>e. Innovation and Competition: </b>PancakeSwap's success has spurred innovation and competition within the DeFi space. Other DEX platforms have emerged on the BinanceSmart Chain, aiming to capture a share of the growing market. This competition has led to the development of new features, improved user experiences, and innovative tokenomics models. Ultimately, users benefit from a wider range of options and a more vibrant DeFi ecosystem.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Conclusion :</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">PancakeSwap has emerged as a prominent player in the decentralized finance landscape, offering users a user-friendly, low-cost, and efficient platform for trading, providing liquidity, and earning rewards. By leveraging the AMM model and operating on the Binance Smart Chain, PancakeSwap has addressed key challenges faced by users on other blockchain networks, such as high fees and limited accessibility. Its innovative features, including yield farming, staking, and Syrup Pools, have incentivized users to actively participate in the platform, contributing to its growth and success. Furthermore, PancakeSwap's impact goes beyond its own ecosystem, as it has sparked innovation and competition within the DeFi space, benefitting the broader blockchain community. With its ongoing commitment to user-centric development and continuous improvement, PancakeSwap is expected to play a significant role in shaping the future of decentralized finance.<br></p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "u6vpQb1LQg",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
